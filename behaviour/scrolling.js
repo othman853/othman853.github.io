@@ -4,7 +4,8 @@ function Scrolling() {
     event.preventDefault();
 
     var anchor = event.srcElement;
-    console.log('Scrolling smoothly e.e');
+        
+    window.location = anchor.href;
   };
 
 };
