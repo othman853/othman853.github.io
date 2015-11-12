@@ -10,6 +10,18 @@ function Scrolling() {
     return nextSection;
   }
 
+  Scrolling.prototype.smoothBackToTop = function _smoothBackToTop(event) {
+
+  };
+
+  Scrolling.prototype.singleAnchorScroll = function _singleAnchorScroll(event) {
+
+    smoothOnclickScroll(event, function _onScroll() {
+
+    });
+
+  };
+
   Scrolling.prototype.smoothOnclickScroll = function _smoothOnclickScroll(event) {
     event.preventDefault();
 
@@ -28,5 +40,6 @@ function Scrolling() {
       current += 3;
 
     }, 1);
+
   };
 };
